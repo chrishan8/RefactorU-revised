@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="refactoru">
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>RefactorU Student Site</title>
+    <!-- ICON -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- ANGULAR SCRIPTS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  </head>
+  <body ng-cloak ng-controller="displaycontroller">
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+    </ul>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="!#" data-activates="dropdown1" class="button-collapse"><i class="startbtn material-icons">perm_identity</i></a>
+        <ul class="left hide-on-med-and-down">
+          <li class="waves-effect waves-light"><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Chris<i class="material-icons left">perm_identity</i></a></li>
+          <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">message</i></a></li>
+          <li class="new-message-number">4</li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" required placeholder="Search">
+                <label for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </li>
+        </ul>
+        <div class="right hide-on-med-and-down col s12 filepath">
+          <a ng-repeat="link in nav" href="#/" class="breadcrumb">{{link}}</a>
+        </div>
+      </div>
+    </nav>
+    <ng-view></ng-view>
+    <!-- SCRIPTS -->
+    <!-- NG-TOAST DEPENDENCIES -->
+    <link rel="stylesheet" href="css/ngToast.min.css">
+    <script src="js/dep/angular-sanitize.js"></script>
+    <script src="js/dep/ngToast.min.js"></script>
+    <!-- MATERIALIZE DEPENDENCIES -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="js/jqueryscripts.js"></script>
+    <!-- DEVELOPER SCRIPTS -->
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/route.js"></script>
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- DEVELOPER CSS -->
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/tableofcontents.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/animate.css">
+  </body>
+</html>

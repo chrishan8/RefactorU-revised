@@ -1,0 +1,31 @@
+<section>
+  <div class="container cards">
+    <div class="row">
+      <div class="col s7 m7 l7">
+        <div ng-repeat="date in dates" ng-show="date.date <= today.getTime()" class="col s6 m6 l6">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-light">
+              <img id="weeklyexercises-card" ng-src="{{date.img}}">
+              <a ng-href="{{date.url}}" class="tint selectable"></a>
+              <span class="card-title">{{date.cardtitle}}</span>
+  	        </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s4 m4 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/home/modules/weekly.jpg">
+            <div class="tint disabled"></div>
+            <span class="card-title">Weekly Exercises</span>
+          </div>
+        </div>
+      </div>
+  	</div>
+  </div>
+</section>
+<div class="fixed-action-btn" style="top: 10vh; left: 24px; z-index:0;">
+  <a ng-href="#/modules" class="btn-floating btn-large">
+    <i class="large material-icons">chevron_left</i>
+  </a>
+</div>

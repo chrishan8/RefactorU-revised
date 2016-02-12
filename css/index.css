@@ -1,0 +1,232 @@
+.defaultfont {
+	font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+	background-color:white;
+	margin:0;
+}
+
+.refactorubrand {
+	margin-top:18px;
+	margin-bottom:27.5px;
+}
+
+.learnmorelink {
+	font-size:16px;
+	font-weight:600;
+	margin-right:25px;
+	margin-top:22px;
+}
+
+.custombtn {
+	color:white !important;
+	background-color:#f99352;
+	border-radius:30px;
+	padding-left:25px !important;
+	padding-right:25px !important;
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+}
+
+.custombtn-apply {
+	font-size:16px;
+	margin-top:24.5px;
+	margin-bottom:27.5px;
+	margin-right:15px;
+}
+
+.custombtn-login {
+	position:relative;
+	top:35vh;
+	font-size:24px;
+	padding-right:35px !important;
+	padding-left:35px !important;
+	animation-delay:1s;
+}
+
+.jumbotron {
+	position:relative;
+	background: url("../img/jumbotron-bg.jpg");
+	background-size:cover;
+	height:100vh;
+	margin:0;
+	text-align:center;
+}
+
+.greeting {
+	position:relative;
+	top:15vh;
+	color:#f99352;
+	font-size:400%;
+	text-shadow: 1px 2px 3px #666;
+}
+
+.modal-title {
+	text-align:center;
+}
+
+.modal-body-leftside {
+	text-align:right;
+	border-right:thin solid grey;
+}
+
+.modal-body-rightside {
+	position:relative;
+	text-align:center;
+	left:0;
+}
+
+/*REFACTORU FOOTER CSS*/
+.footer-container {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight:500;
+    padding-top:30px;
+    padding-bottom:20px;
+}
+
+.footer-heading {
+    font-size:16px;
+    font-weight:bold;
+    color:#febc5b;
+}
+.footer-section{
+    /*padding: 12px;*/
+    margin-bottom: 12px;
+}
+
+.subscribe-input {
+    margin:10px 8px 8px 0px;
+    padding:5px;
+    border:1px solid transparent;
+    display: inline-block;
+    outline: none;
+    outline-offset: 0px;
+}
+.subscribe-input:focus{
+    border: 1px solid #febc5b;
+    box-shadow: 0 0 8px rgba(254, 188, 91, 1);
+    padding:5px;
+}
+
+.social-button {
+    display:inline-block;
+    font-size: 18px;
+    color:white;
+    border-radius: 2px;
+    background-color:transparent;
+    height:30px;
+    width:30px;
+    text-align:center;
+    padding-top:3px;
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+}
+
+/* This rule accomodates the one icon (Q for Quroa) which is not a glyph */
+a.social-button .icon{
+    margin-bottom:-4px;
+    width: 18px;
+    fill:#f7f7f7;
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+}
+.social-container{
+    border: 1px solid #fff; 
+    text-align: center;
+}
+
+.fb:hover {
+    background-color: #3350AE;
+}
+
+.linkedin:hover {
+    background-color: #0084D7;
+}
+
+.twitter:hover {
+    background-color: #00C4FC;
+}
+
+.g-plus:hover {
+    background-color: #C43A2F;
+}
+.stack-overflow:hover{
+    background-color: #f48024;
+}
+.instagram:hover{
+    background-color: #125688;
+}
+.reddit:hover{
+    background-color: #ff4500;
+}
+.quora:hover{
+    background-color: #b92b27;
+}
+
+.footer-container a:link {color:#f7f7f7;}      /* unvisited link */
+.footer-container a:visited {color:#f7f7f7;}  /* visited link */
+.footer-container a:hover {color:#f7f7f7;}  /* mouse over link */
+.footer-container a:active {color:#f7f7f7;}  /* selected link */
+
+.gray-back {
+	background-color: #404040;
+}
+
+.light-gray-back{
+    background: #777;
+}
+
+.dark-gray-back{
+    background:#434343;
+}
+
+.white-back {
+    background-color: #fff;
+}
+
+.ru-yellow-back{
+	background: #febc5b;
+}
+.ru-dark-yellow-back{
+	background: #f99e52;  
+}
+
+.light-gray-back{
+    background: #777;
+}
+.dark-gray-back{
+    background:#434343;
+}
+
+.ru-yellow-back{
+	background: #febc5b;
+}
+
+.ru-dark-yellow-back{
+	background: #f99e52;  
+}
+
+.body-text-right,.body-text, .teaser-text,.course-intro-text, .breadcrumb{
+    font-size: 14px;
+}
+
+.glyphicon-copyright-mark{
+    margin-right:3.5px;
+}
+
+.white {
+    color: #fff;
+}
+
+@media screen and (max-width:380px) {
+	.menu {
+		width:100vw;
+	}
+
+	.refactorubrand {
+		margin:auto;
+	}
+}

@@ -1,0 +1,32 @@
+.btn-close {
+	position:relative;
+	float:right;
+	color:black;
+	background-color:white;
+	text-align:center;
+	height:45px;
+	width:45px;
+}
+
+.btn-close:hover {
+	background-color:#f99352;
+}
+
+.btn-close i {
+	position:relative;
+	top:25%;
+}
+
+.contents-nav {
+	text-align:right;
+}
+
+.card-fontstyle {
+	font-size:5em;
+	color:white;
+	font-weight:bold;
+}
+
+.contents-nav a:hover {
+	color:#f99352;
+}

@@ -1,0 +1,140 @@
+<section>
+	<div class="container spacer week1-colortheme">
+		<div>
+			<img src="img/logo.png">
+			<a class="btn-close waves-effect waves-light" href="#/week1"><i class="material-icons">view_list</i></a>
+		</div>
+    <div class="card-fontstyle spacer">Card Flip</div>	
+    <div class="navigate">
+      <a class="navigate-right" href="#/cssmodularity1">CSS Modularity 1<i class="material-icons">chevron_right</i></a>
+    </div>
+	</div>
+	<div class="container spacer defaultfont cardbodybg">
+		<h2 class="bold">Things to know</h2>
+		<blockquote class="blockquote-week1-colortheme"><ul>
+			<li>CSS Syntax</li>
+			<li>CSS3</li>
+		<ul></blockquote>
+		<h2 class="bold">Resources</h2>
+		<div class="collection">
+      <a href="http://learn.shayhowe.com/html-css/" class="collection-item">A Beginner’s Guide to HTML & CSS</a>
+      <a href="http://docs.webplatform.org/wiki/guides/the_basics_of_html" class="collection-item">WebPlatform: The Basics of HTML</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started?redirectlocale=en--%20US&redirectslug=CSS%2FGetting_Started" class="collection-item">MDN: Getting Started with CSS</a>
+      <a href="https://culturedcode.com/css/reference.html" class="collection-item">CSS 2.1 Reference</a>
+      <a href="https://culturedcode.com/css/reference.html" class="collection-item">MDN: Opacity</a>
+      <a href="https://culturedcode.com/css/reference.html" class="collection-item">MDN: Using CSS3 Transitions</a>
+      <a href="https://culturedcode.com/css/reference.html" class="collection-item">MDN: CSS3 transition property</a>
+      <a href="https://culturedcode.com/css/reference.html" class="collection-item">MDN: Using CSS3 Transforms</a>
+      <a href="https://culturedcode.com/css/reference.html" class="collection-item">MDN: CSS3 transform property</a>
+    </div>
+    <h2 class="bold">Objective</h2>
+    <p>You have an image gallery and you want to show off your CSS skills by adding a cool effect. Create a card flip effect using CSS3 3D Transformations.</p>
+    <p>The transition should look like the following:</p>
+    <img src="https://ru-student-site.s3.amazonaws.com/cardflip.jpg">
+    <h2 class="bold">Requirements</h2>
+    <ul class="collection">
+      <li class="collection-item">
+      	<div class="row">
+      		<div class="col s11 m11 l11">
+      			<p>Clone the exercise-starters repo.</p>
+            <pre><code class="language-javascript">$ cd ~
+$ mkdir projects
+$ cd projects
+$ git clone https://github.com/RefactorU/exercise-starters</code></pre>
+					</div>
+					<div class="col s1 m1 l1">
+            <p>
+      				<input ng-model="week1completion[0][0]" type="checkbox" id="step1" />
+      				<label for="step1"></label>
+    				</p>
+    			</div>
+    		</div>
+      </li>
+      <li class="collection-item">
+      	<div class="row">
+      		<div class="col s11 m11 l11">
+      			Copy the contents of <code class="language-git">~/projects/exercise-starters/html/card-flip</code> to a new folder: <code class="language-git">~/projects/html1-card-flip</code>. Use the <code class="language-git">cp -r</code> command to recursively copy a folder.
+      		</div>
+      		<div class="col s1 m1 l1">
+      			<p>
+      				<input ng-model="week1completion[0][1]" type="checkbox" id="step2" />
+      				<label for="step2"></label>
+    				</p>
+    			</div>
+    		</div>
+    	</li>
+      <li class="collection-item">
+      	<div class="row">
+      		<div class="col s11 m11 l11">
+      			Adjust the position of the <code class="language-css">.front</code> and <code class="language-css">.back</code> elements so that they are right on top of each other
+      		</div>
+      		<div class="col s1 m1 l1">
+		      	<p>
+		      		<input ng-model="week1completion[0][2]" type="checkbox" id="step3" />
+		      		<label for="step3"></label>
+		    		</p>
+		    	</div>
+		  	</div>
+    	</li>
+    	<li class="collection-item">
+      	<div class="row">
+      		<div class="col s11 m11 l11">
+      			Before doing anything fancy, lets see if we can get the basic effect working just with opacity. Using opacity, adjust the CSS so that only <code class="language-css">.front</code> is visible
+      		</div>
+      		<div class="col s1 m1 l1">
+            <p>
+		    			<input ng-model="week1completion[0][3]" type="checkbox" id="step4" />
+		    			<label for="step4"></label>
+		    		</p>
+		  		</div>
+		  	</div>
+     	</li>
+     	<li class="collection-item">
+      	<div class="row">
+      		<div class="col s11 m11 l11">
+      			On hover, set the <code class="language-css">.front</code> opacity to 0 and the <code class="language-css">.back</code> opacity to 1.
+      		</div>
+      		<div class="col s1 m1 l1">
+      			<p>
+		     			<input ng-model="week1completion[0][4]" type="checkbox" id="step5" />
+		    			<label for="step5"></label>
+		   			</p>
+		  		</div>
+		   	</div>
+    	</li>
+     	<li class="collection-item">
+    		<div class="row">
+    			<div class="col s11 m11 l11">
+      			Look up the CSS3 transition property. Set up a transition so that you have a smooth crossfade on hover.
+      		</div>
+      		<div class="col s1 m1 l1">
+            <p>
+		    			<input ng-model="week1completion[0][5]" type="checkbox" id="step6" />
+		     			<label for="step6"></label>
+            </p>
+		  		</div>
+		   	</div>
+     	</li>
+    	<li class="collection-item">
+    		<div class="row">
+    			<div class="col s11 m11 l11">
+      			Now we can build on this basic version to add the 3D transformation which creates the flip effect. Look up CSS3 3D Rotations and modify your code to create the card flip effect indicated in the screenshots above.
+    			</div>
+    			<div class="col s1 m1 l1">
+					   <p>
+		    			<input ng-model="week1completion[0][6]" type="checkbox" id="step7"/>
+		    			<label for="step7"></label>
+	    			</p>
+	    		</div>
+				</div>
+    	</li>
+  	</ul>
+  	<button class="waves-effect waves-light btn" ng-click="completedcheckcardflip()" ng-disabled="disableitcardflip">Complete</button>
+  	<toast></toast>
+  	<h2 class="bold">Who's Here?</h2>
+  	<div class="chip">
+    	<img src="http://materializecss.com/images/yuna.jpg" alt="Contact Person">
+  		Jane Doe
+		</div>
+  </div>
+</section>

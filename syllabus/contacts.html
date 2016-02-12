@@ -1,0 +1,79 @@
+<section>
+	<div class="container spacer syllabus-colortheme">
+		<div>
+			<img src="img/logo.png">
+			<a class="btn-close waves-effect waves-light" href="#/syllabus"><i class="material-icons">view_list</i></a>
+		</div>
+    <div class="card-fontstyle spacer">Contacts</div>	
+    <div class="navigate">
+      <a class="navigate-left" href="#/overview"><i class="material-icons">chevron_left</i>Course Overview</a>
+      <a class="navigate-right" href="#/policies">Policies<i class="material-icons">chevron_right</i></a>
+    </div>
+	</div>
+	<div class="container spacer defaultfont cardbodybg">
+		<h2 class="bold">Instructors</h2>
+    <div class="row">
+      <div ng-repeat="instructor in instructors" class="col s3 m3 l3">
+        <div class="centered">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" ng-src="{{instructor.profilepic}}">
+            </div>
+            <div class="card-content syllabus-colortheme">
+              <span class="nametext activator grey-text text-darken-4 theme-color-text">{{instructor.name}}<br><span class="roletext">{{instructor.role}}</span></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Contact Me<i class="material-icons right">close</i></span>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">mode_edit</i>
+                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                      <label for="icon_prefix2">Message</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="bold">Faculty</h2>
+    <div class="row">
+      <div ng-repeat="member in faculty" class="col s3 m3 l3">
+        <div class="centered">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" ng-src="{{member.profilepic}}">
+            </div>
+            <div class="card-content syllabus-colortheme">
+              <span class="nametext activator grey-text text-darken-4 theme-color-text">{{member.name}}<br><span class="roletext">{{member.role}}</span></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Contact Me<i class="material-icons right">close</i></span>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row"d >
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">mode_edit</i>
+                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                      <label for="icon_prefix2">Message</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

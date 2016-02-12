@@ -1,0 +1,92 @@
+.cardbodybg {
+	background-color:white;
+}
+
+.spacer {
+	padding-top:5vh;
+	padding-left:5vh;
+	padding-right:5vh;
+	padding-bottom:5vh;
+}
+
+.week1-colortheme {
+	background-color:#cddc39;
+}
+
+.syllabus-colortheme {
+	background-color:#42a5f5;
+}
+
+blockquote{
+	margin: 20px 0;
+	padding-left: 1.5rem;
+	border-left: 5px solid #42a5f5;
+}
+
+.blockquote-week1-colortheme {
+	border-left: 5px solid #cddc39;
+}
+
+.page-nav {
+/*	float:left;*/
+	font-size:5em;
+	color:white;
+	font-weight:bold;
+}
+
+.navigate {
+	padding-top:10%;
+	padding-bottom:5%;
+	font-weight:bold;
+	font-size:2em;
+	color:white;
+}
+
+.navigate-right {
+	float:right;
+	color:white;
+}
+
+.navigate-left {
+	color:white;
+}
+
+.navigate-right:hover {
+	color:#f99352;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+.centered {
+	text-align:center;
+}
+
+.highlight {
+	color:#f99352;
+}
+
+.imagefit {
+	width:75%;
+}
+
+.card-content .theme-color-text {
+	color:white !important;
+}
+
+.card-content {
+	height:128px;
+}
+
+.nametext {
+	font-size:24px;
+	font-weight:bold;
+	line-height:0;
+}
+
+.roletext {
+	font-size:14px;
+	line-height:0;
+}
+

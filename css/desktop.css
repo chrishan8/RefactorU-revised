@@ -1,0 +1,65 @@
+body {
+	background-color:#263238;
+}
+
+.nav-wrapper {
+    background-color:#434343;
+}
+
+nav ul li:hover {
+    background-color:#f99352;
+}
+
+.new-message-number {
+    color:#ec971f;
+}
+
+.new-message-number:hover {
+    background-color:#434343;
+}
+
+.startbtn {
+    margin-left:15px;
+}
+
+.filepath {
+    margin-right:15px;
+}
+
+.dropdown-content {
+	z-index:3;
+}
+
+#search {
+    margin:0;
+}
+
+section {
+	margin-top:5vh;
+	margin-bottom:5vh;
+}
+
+.card {
+	position:relative;
+}
+
+.card-title {
+	width:100%;
+}
+
+.tint {
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-color:rgba(0,0,0,0.5);
+	top:0;
+}
+
+.tint.disabled {
+	background-color:rgba(0,0,0,0.85);
+}
+
+.tint.selectable:hover {
+	background-color:rgba(0,0,0,0);
+	z-index:3;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html ng-app="refactoru">
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>RefactorU Student Site</title>
+		<!-- ICON -->
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<!-- ANGULAR SCRIPTS -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+	</head>
+	<body class="ng-cloak" ng-controller="displaycontroller">
+	<!-- NAVBAR SECTION -->
+		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<a class="navbar-brand" href="#">
+        				<img class="refactorubrand" alt="Brand" src="http://class.refactoru.com/images/logo_students.png">
+      				</a>
+   				</div>
+   				<!-- COLLAPSED NAVBAR FOR MOBILE USERS -->
+   				<button type="button" class="navbar-toggle collapsed menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        			<span class="sr-only">Toggle navigation</span>
+       				<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+      			<!-- NAVBAR ELEMENTS -->
+      			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	   				<ul class="nav navbar-nav navbar-right">
+	   					<!-- LEARN MORE LINK -->
+	        			<li>
+	        				<a class="learnmorelink defaultfont" href="http://www.refactoru.com/courses/web-development">Learn More</a>
+	        			</li>
+	        			<!-- NEW STUDENT TYPEFORM APPLICATION -->
+	        			<li>
+	        				<a class="typeform-share btn btn-default custombtn custombtn-apply defaultfont" href="https://chrishan8.typeform.com/to/SooIQy" data-mode="1" target="_blank">Apply</a>
+							<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';})()
+							</script>
+	        			</li>
+	        		</ul>
+	        	</div>
+  			</div>
+		</nav>
+		<!-- JUMBOTRON SECTION -->
+		<div class="jumbotron anchor" id="anchor1"> <!-- page should load and move to this section here automatically -->
+			<h2 class="greeting defaultfont">RefactorU Class Portal</h2>
+			<button data-toggle="modal" data-target="#loginmodal" class="btn btn-default custombtn custombtn-login defaultfont animated pulse">Log In</button>
+			<!-- MODAL -->
+			<div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  			<div class="modal-dialog" role="document">
+	    			<div class="modal-content">
+	      				<div class="modal-header">
+	        				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        				<div class="modal-title">
+		       	 				<h3 class="defaultfont" id="myModalLabel">Log In with GitHub</h3>
+		       	 				<img src="img/github.png"/>
+		       	 			</div>
+	      				</div>
+	      				<div class="modal-body">
+	      					<div class="container">
+	      						<div class="row">
+	      							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 modal-body-leftside">
+	        							<form method="post" class="signin" action="#">
+	        								<fieldset class="textbox">
+	        									<label class="username">
+	        										<span>Username or email</span>
+	        										<input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username">
+	        									</label>
+	        									<label class="password">
+	        										<span>Password</span>
+	        										<input id="password" name="password" value="" type="password" placeholder="Password">
+	        									</label>
+	  											<label>
+	  												Remember me
+	  												<input type="checkbox" value="">
+	  											</label>
+	        									<p>
+	        										<a class="forgot" href="#">Forgot your password?</a>
+	        									</p>        
+	        								</fieldset>
+	  									</form>
+	      							</div>
+	      							<div class="modal-body-rightside">
+	      								<a type="button" class="btn btn-primary" href="#">Sign Up</a>
+	      							</div>
+	      						</div>
+	      					</div>
+	      				</div>
+	      				<div class="modal-footer">
+	        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        				<a href="desktop.html" type="button" class="btn btn-success">Sign in</a>
+	      				</div>
+	    			</div>
+	  			</div>
+			</div>
+		</div>
+		<!-- REFACTORU EXISTING FOOTER -->
+		<div class="dark-gray-back footer-container shim-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-sm-4 footer-section">
+								<p class="header-6 footer-heading">RefactorU accelerates the learning and development of the world's aspiring creatives, makers, and technologists.</p>
+								<div class="col-xs-12">
+									<form accept-charset="UTF-8" action="https://bx203.infusionsoft.com/app/form/process/462cf3cb8445a1fac0092f5ff5e601b0" method="POST" class="infusion-form">
+										<input name="inf_form_xid" type="hidden" value="462cf3cb8445a1fac0092f5ff5e601b0">
+										<input name="inf_form_name" type="hidden" value="Sign up for newsletter">
+										<input name="infusionsoft_version" type="hidden" value="1.34.0.40">
+											<div class="row">
+												<span class="infusion-field">
+													<label for="inf_field_Email" class="white">Stay informed about courses and events.</label>
+													<input id="inf_field_Email" name="inf_field_Email" type="text" placeholder="Your Email" class="subscribe-input infusion-field-input-container">
+												</span>
+												<span class="infusion-submit">
+													<input type="submit" value="Get Updates!" style="margin-left:3px; letter-spacing:0.05px" class="btn btn-sm btn-danger subscribe-button transition">
+												</span>
+											</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-sm-8">
+								<div class="row">
+									<div class="col-sm-3">
+										<p class="footer-heading">Students</p>
+										<p class="body-text white">
+											<a href="http://www.refactoru.com/testimonials" class="footer-link-responsive">Success Stories</a><br class="footer-break-responsive">
+											<a href="https://refactoru.zendesk.com/hc/en-us/articles/203338515-Are-scholarships-and-or-discounts-available-" class="footer-link-responsive">Financial Aid</a><br class="footer-break-responsive">
+											<a href="http://www.refactoru.com/faq" class="footer-link-responsive">FAQ</a><br class="footer-break-responsive">
+										</p>
+									</div>
+									<div class="col-sm-3">
+										<p class="footer-heading">Companies</p>
+										<p class="body-text white">
+											<a href="http://www.refactoru.com/alumni-employers" class="footer-link-responsive">Employers</a><br class="footer-break-responsive">
+											<a href="http://www.refactoru.com/contact" class="footer-link-responsive">Partners</a><br class="footer-break-responsive">
+											<a href="http://www.refactoru.com/contact" class="footer-link-responsive">Work with Us</a><br class="footer-break-responsive">
+										</p>
+									</div>
+									<div class="col-sm-3">
+										<p class="footer-heading">Community</p>
+										<p class="body-text white">
+											<a href="http://www.refactoru.com/grads" class="footer-link-responsive">Grads</a><br class="footer-break-responsive">
+											<a href="http://www.refactoru.com/resources/web-development" class="footer-link-responsive">Resources</a><br class="footer-break-responsive">
+											<a href="http://www.refactoru.com/blog" class="footer-link-responsive">Blog</a>
+										</p>
+									</div>
+									<div class="col-sm-3">
+										<p class="footer-heading">RefactorU</p>
+										<p class="body-text white">
+											<a href="http://www.refactoru.com/about" class="footer-link-responsive">About Us</a><br class="footer-break-responsive">
+											<a href="http://www.refactoru.com/press" class="footer-link-responsive">Press</a><br class="footer-break-responsive">
+											<a href="http://www.refactoru.com/contact" class="footer-link-responsive">Careers</a><br class="footer-break-responsive">
+											<a href="http://www.refactoru.com/contact" class="footer-link-responsive">Contact Us</a><br class="footer-break-responsive">
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-sm-4 footer-section">
+								<span class="glyphicon glyphicon-copyright-mark white"></span>
+								<span class="white">2015 RefactorU. All Rights Reserved.</span>
+							</div>
+							<div class="col-sm-2 footer-section">
+								<a href="http://www.refactoru.com/terms" class="footer-link-responsive"> Terms</a><br>
+								<a href="http://www.refactoru.com/site-map" class="footer-link-responsive">Site Map</a>
+							</div>
+							<div class="col-sm-2 footer-section"> 
+								<a href="http://www.refactoru.com/privacy" class="footer-link-responsive">Privacy</a>
+							</div>
+							<div class="col-sm-4 footer-section">
+								<div class="social-buttons-container">
+									<a href="https://www.facebook.com/RefactorU" target="_blank" class="social-button fb">
+										<span class="fa fa-facebook"></span>
+									</a>
+									<a href="http://www.linkedin.com/company/refactoru" target="_blank" class="social-button linkedin">
+										<span class="fa fa-linkedin"></span>
+									</a>
+									<a href="https://twitter.com/RefactorU" target="_blank" class="social-button twitter">
+										<span class="fa fa-twitter"></span>
+									</a>
+									<a href="https://plus.google.com/s/refactoru" target="_blank" class="social-button g-plus">
+										<span class="fa fa-google-plus"></span>
+									</a>
+									<a href="https://www.youtube.com/refactoru" target="_blank" class="social-button g-plus">
+										<span class="fa fa-youtube"></span>
+									</a>
+									<a href="https://careers.stackoverflow.com/company/refactoru" target="_blank" class="social-button stack-overflow">
+										<span class="fa fa-stack-overflow"></span>
+									</a>
+									<a href="https://www.quora.com/Reviews-of-RefactorU" target="_blank" class="social-button quora">
+										<span class="fa svg-holder"><!--?xml version="1.0" standalone="no"?-->
+											<svg class="icon" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+		    									<g id="quora-icon" transform="matrix(1.02073,0,0,1.02073,-0.892132,-2.06045)">
+		        									<g id="Layer1">
+		            									<path d="M58,86C-2.749,92.493 -3.49,32.939 15,16C35.023,-2.343 63.529,-0.523 79.809,16C89.833,26.174 91.928,40.869 90.331,50.789C88.075,64.807 80.64,73.625 74,78C84.866,92.418 89.64,80.394 90,79C92.408,78.986 94.801,78.938 97,79C97.406,81.136 95.377,99.147 77.6,99.4C63.562,99.6 59.633,85.826 58,86ZM66.997,64.996C67.095,64.783 70.094,59.962 70,41C69.902,21.257 62.906,11.103 48,11C33.094,10.897 24.906,24.926 25,41C25.094,57.074 26.898,78.535 47,78C53.33,77.832 53.937,76.874 54,77C48.244,62.366 35,64 35,64L34,59C34,59 40.883,54.743 48,55C56.114,55.292 62.362,59.477 66.997,64.996C66.993,65.005 66.994,65.006 67,65L66.997,64.996Z" style="fill:stroke-width:2.04px;stroke-linecap:square;stroke-linejoin:miter;stroke:black;"></path>
+		        									</g>
+		    									</g>
+											</svg>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- SCRIPTS -->
+		<!-- NG-TOAST DEPENDENCIES -->
+    	<link rel="stylesheet" href="css/ngToast.min.css">
+    	<script src="js/dep/angular-sanitize.js"></script>
+    	<script src="js/dep/ngToast.min.js"></script>
+		<!-- BOOTSTRAP DEPENDENCIES -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- DEVELOPER SCRIPTS -->
+		<script type="text/javascript" src="js/controllers.js"></script>
+		<!-- FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<!-- DEVELOPER CSS -->
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/animate.css">
+	</body>
+</html>
