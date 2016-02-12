@@ -13,7 +13,7 @@
         <div ng-repeat="card in modulescards" class="card hoverable">
           <div class="card-image waves-effect waves-light">
             <img ng-src="{{card.img}}">
-            <a ng-href="{{card.link}}" class="tint selectable"></a>
+            <a ng-click="modulesnav($index)" ng-href="{{card.link}}" class="tint selectable"></a>
             <span class="card-title">{{card.cardtitle}}</span>
           </div>
         </div>
@@ -22,7 +22,7 @@
   </div>
 </section>
   <div class="fixed-action-btn" style="top: 10vh; left: 24px; z-index:0;">
-      <a ng-href="#/" class="btn-floating btn-large">
+      <a ng-click="backbtn()" ng-href="#/" class="btn-floating btn-large">
           <i class="large material-icons">chevron_left</i>
       </a>
     </div>

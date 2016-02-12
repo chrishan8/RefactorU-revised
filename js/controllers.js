@@ -42,7 +42,39 @@ app
 	$scope.instructors = employeelist.instructors;
 	$scope.faculty = employeelist.faculty;
 
-	$scope.nav = ['Home'];
+	$scope.nav = [];
+
+	$scope.homecardsleftnav = function(index) {
+		if ($scope.homecardsleft[index].nav) {
+			$scope.$parent.nav.push($scope.homecardsleft[index].cardtitle);
+		}
+		console.log($scope.nav);
+	}
+	$scope.homecardsrightnav = function(index) {
+		if ($scope.homecardsright[index].nav) {
+			$scope.$parent.nav.push($scope.homecardsright[index].cardtitle);
+		}
+	}
+
+	$scope.modulesnav = function(index) {
+		if ($scope.modulescards[index].nav) {
+			$scope.$parent.nav.push($scope.modulescards[index].cardtitle);
+		}
+	}
+
+	$scope.weeklynav = function(index) {
+		if ($scope.dates[index].nav) {
+			$scope.$parent.nav.push($scope.dates[index].cardtitle);
+		}
+	}
+
+	$scope.homebtn = function() {
+		$scope.$parent.nav = [];
+	}
+
+	$scope.backbtn = function() {
+		$scope.$parent.nav.pop();
+	}
 }])
 // .controller('navcontroller', ['$scope', 'homecards', 'modulescards', 'weekcards', 'week1exerciselist', 'syllabuslist',  function($scope, homecards, modulescards, weekcards, week1exerciselist, syllabuslist) {
 // 	$scope.homecards = function() {

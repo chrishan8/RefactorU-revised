@@ -5,7 +5,7 @@
         <div ng-repeat="card in homecardsleft" class="card hoverable" ng-mouseover="card.highlighted=true" ng-mouseleave="card.highlighted=false">
           <div class="card-image waves-effect waves-light">
             <img ng-src="{{card.img}}">
-            <a ng-href="{{card.link}}" class="tint selectable"></a>
+            <a ng-click="homecardsleftnav($index)" ng-href="{{card.link}}" class="tint selectable"></a>
             <span class="card-title"><div ng-show="!card.highlighted">{{card.cardtitle}}</div><marquee behavior="scroll" direction="left" ng-show="card.highlighted">{{card.marquee}}</marquee></span>
           </div>
         </div>
@@ -14,7 +14,7 @@
         <div ng-repeat="card in homecardsright" class="card hoverable" ng-mouseover="card.highlighted=true" ng-mouseleave="card.highlighted=false">
           <div class="card-image waves-effect waves-light">
             <img ng-src="{{card.img}}">
-            <a ng-href="{{card.link}}" class="tint selectable"></a>
+            <a ng-click="homecardsrightnav($index)" ng-href="{{card.link}}" class="tint selectable"></a>
             <span class="card-title"><div ng-show="!card.highlighted">{{card.cardtitle}}</div><marquee behavior="scroll" direction="left" ng-show="card.highlighted">{{card.marquee}}</marquee></span>
           </div>
         </div>

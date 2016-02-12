@@ -6,7 +6,7 @@
           <div class="card hoverable">
             <div class="card-image waves-effect waves-light">
               <img id="weeklyexercises-card" ng-src="{{date.img}}">
-              <a ng-href="{{date.url}}" class="tint selectable"></a>
+              <a ng-click="weeklynav($index)" ng-href="{{date.url}}" class="tint selectable"></a>
               <span class="card-title">{{date.cardtitle}}</span>
   	        </div>
           </div>
@@ -25,7 +25,7 @@
   </div>
 </section>
 <div class="fixed-action-btn" style="top: 10vh; left: 24px; z-index:0;">
-  <a ng-href="#/modules" class="btn-floating btn-large">
+  <a ng-click="backbtn()" ng-href="#/modules" class="btn-floating btn-large">
     <i class="large material-icons">chevron_left</i>
   </a>
 </div>
